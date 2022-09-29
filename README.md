@@ -8,7 +8,7 @@
 
 ### What is Ransomware?
 
-![This is an image](w-ransom.jpg)
+![This is an image](w-ransom1.jpg)
 
 Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
 
