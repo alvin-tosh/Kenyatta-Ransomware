@@ -1,18 +1,18 @@
-# Kenyatta-Ransomware
+# Kenyatta-Ransomware 🤐
 > Note 1: This project is purely academic, use at your own risk. I do not encourage in any way the use of this software illegally or to attack targets without their previous authorization. Please do that on a throw-away machine, docker containers and VMs. 
 
-> Note 2: Unfortunatelly now some AVs (including Windows Defender) detects the unlocker as a virus. Disable any antivirus to play with the project.
+> Note 2: Unfortunatelly now some AVs (including Windows Defender) detects the unlocker as a virus🥶. Disable any antivirus to play with the project.
 
 **Remember, security is always a double-edged sword**
 
 
-### What is Ransomware?
+### What is Ransomware😈
 
 ![This is an image](w-ransom1.jpg)
 
 Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
 
-### Project Summary
+### The Project 
 
 This project was developed in my pursuit to learn malware reverse engineering and threat Inteligence. Basically, it will encrypt your files in background using AES-256-CTR, a strong encryption algorithm, using RSA-4096 to secure the exchange with the server, optionally using the Tor SOCKS5 Proxy. The base functionality is what you see in the famous ransomware Cryptolocker.
 
