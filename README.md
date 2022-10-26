@@ -36,9 +36,9 @@ The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payl
 
 ### Building the binaries
 
-> DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you acidentally encrypt all of your disks!
+> DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! It will encrypt all your disks!
 
-First of all download the project outside your $GOPATH:
+First, download the project outside your $GOPATH:
 
 ```bash
 git clone github.com/alvin-tosh/Malware-Exhibit/tree/main/Advanced%20Malware/Kenyatta%20ransomware
