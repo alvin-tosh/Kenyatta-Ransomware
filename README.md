@@ -12,7 +12,7 @@
 
 Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
 
-### The Project 
+### The Project ☠️
 
 This project was developed in my pursuit to learn malware reverse engineering and threat Inteligence. Basically, it will encrypt your files in background using AES-256-CTR, a strong encryption algorithm, using RSA-4096 to secure the exchange with the server, optionally using the Tor SOCKS5 Proxy. The base functionality is what you see in the famous ransomware Cryptolocker.
 
@@ -94,7 +94,7 @@ The `SERVER_` variables above only apply to the malware. The server has a flag `
 
 > DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you acidentally encrypt all of your disks!
 
-## Step by Step Demo and How it Works
+## Step by Step Demo and How it Works ☠️
 
 For this demo I'll use two machines, my personal linux machine and a windows 10 VM.
 
