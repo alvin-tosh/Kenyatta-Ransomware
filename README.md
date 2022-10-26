@@ -22,7 +22,7 @@ The server store the victim's identification key along with the encryption key u
 
 The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payload before send then to the server. This approach with the optional Tor Proxy and a `.onion` domain allow you to hide almost completely your server.
 
-### Features
+### Features ☠️
 
 - Run in Background (or not)
 - Encrypt files using AES-256-CTR(Counter Mode) with random IV for each file.
@@ -34,7 +34,7 @@ The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payl
 - Walk all drives by default.
 - Docker image for compilation.
 
-### Building the binaries
+### Building the binaries ☠️
 
 > DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! It will encrypt all your disks!
 
@@ -64,13 +64,13 @@ make
 
 You can build the server for windows with `make -e GOOS=windows`.
 
-#### Docker
+#### Docker ☠️
 
 ```bash
 ./build-docker.sh make
 ```
 
-#### Config Parameters
+#### Config Parameters ☠️
 
 You can change some of the configs during compilation. Instead of run only `make`, you can use the following variables:
 
@@ -164,6 +164,6 @@ The server has only two endpoints:
 
 `GET api/keys/:id` - Id is a 32 characters parameter, representing an Id already persisted. Returns a json containing the encryption key or a json error
 
-## The end
+## The end ☠️
 
-As you can see, building a functional ransomware, with some of the best existing algorithms is not dificult, anyone with some programming skills can build that in any programming language.
+Building a functional ransomware, with some of the best existing algorithms is not dificult, anyone with some programming skills can build that in any programming language.
