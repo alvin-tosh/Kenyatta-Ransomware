@@ -167,4 +167,4 @@ The server has only two endpoints:
 
 ## The end ☠️
 
-Building a functional ransomware, with some of the best existing algorithms is not dificult, anyone with some programming skills can build that in any programming language.
+Building a LIVE ransomware, with some of the best existing algorithms is not dificult, anyone with some programming skills can build that in any programming language.
