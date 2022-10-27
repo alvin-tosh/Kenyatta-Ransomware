@@ -6,13 +6,13 @@
 **Remember, security is always a double-edged sword**
 
 
-### What is Ransomware😈
+## What is Ransomware😈
 
 ![This is an image](w-ransom1.jpg)
 
 Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
 
-### The Project ☠️
+## The Project ☠️
 
 This project was developed in my pursuit to learn malware reverse engineering and threat Inteligence. Basically, it will encrypt your files in background using AES-256-CTR, a strong encryption algorithm, using RSA-4096 to secure the exchange with the server, optionally using the Tor SOCKS5 Proxy. The base functionality is what you see in the famous ransomware Cryptolocker.
 
@@ -22,7 +22,7 @@ The server store the victim's identification key along with the encryption key u
 
 The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payload before send then to the server. This approach with the optional Tor Proxy and a `.onion` domain allow you to hide almost completely your server.
 
-### Features ☠️
+## Features ☠️
 
 - Run in Background (or not)
 - Encrypt files using AES-256-CTR(Counter Mode) with random IV for each file.
@@ -35,7 +35,7 @@ The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payl
 - Docker image for compilation.
 - Tried to create a .ova..........TRIED😔
 
-### Building the binaries ☠️
+## Building the binaries ☠️
 
 > DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! It will encrypt all your disks!
 
