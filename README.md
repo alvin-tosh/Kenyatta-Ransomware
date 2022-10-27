@@ -26,13 +26,14 @@ The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payl
 
 - Run in Background (or not)
 - Encrypt files using AES-256-CTR(Counter Mode) with random IV for each file.
-- Multithreaded.
+- Multithreading.
 - RSA-4096 to secure the client/server communication.
-- Includes an Unlocker.
+- Includes an Unlocker. Coz I never meant to hurt you...🤭 {Eminem}
 - Optional TOR Proxy support.
-- Use an AES CTR Cypher with stream encryption to avoid load an entire file into memory.
+- Uses AES CTR Cypher with stream encryption to avoid loading an entire file into memory.
 - Walk all drives by default.
 - Docker image for compilation.
+- Tried to create a .ova..........TRIED😔
 
 ### Building the binaries ☠️
 
