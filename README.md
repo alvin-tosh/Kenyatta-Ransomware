@@ -65,7 +65,7 @@ make
 
 You can build the server for windows with `make -e GOOS=windows`.
 
-### Docker ☠️
+### ✊ Docker ☠️
 
 ```bash
 ./build-docker.sh make
