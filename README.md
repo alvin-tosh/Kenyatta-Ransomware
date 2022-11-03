@@ -71,7 +71,7 @@ You can build the server for windows with `make -e GOOS=windows`.
 ./build-docker.sh make
 ```
 
-### Config Parameters ☠️
+### 👊 Config Parameters ☠️
 
 You can change some of the configs during compilation. Instead of run only `make`, you can use the following variables:
 
