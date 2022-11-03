@@ -95,7 +95,7 @@ The `SERVER_` variables above only apply to the malware. The server has a flag `
 
 > DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you acidentally encrypt all of your disks!
 
-## Step by Step Demo and How it Works ☠️
+## 👉 Step by Step Demo and How it Works ☠️
 
 For this demo I'll use two machines, my personal linux machine and a windows 10 VM.
 
