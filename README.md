@@ -1,4 +1,4 @@
-# <h1 align="center"> Kenyatta-Ransomware 🤐 </h1>
+# <h1 align="center"> Kenyatta Ransomware 🤐 </h1>
 > PS: This project is purely academic, use at your own risk. I will not condone, in any way, the use of this software illegally or to attack targets without their authorization. Please do that on a throw-away machine, docker containers and VMs. 
 
 > Note: Unfortunately now some AVs (Malwarebytes, Windows Defender) detect the unlocker as a virus🥶. Disable any antivirus to play with the project or the decryption key maybe quarantined or deleted by the AV 🤭 Thus almost impossible to recover your data 🥲
