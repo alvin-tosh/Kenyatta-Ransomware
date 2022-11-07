@@ -10,7 +10,7 @@
 
 ![This is an image](w-ransom1.jpg)
 
-Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
+Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and force users to pay the ransom through certain online payment methods to get a decryption key.
 
 <img src="ransomware.gif" height="520" width="1750" >
 
@@ -20,14 +20,14 @@ This project was developed in my pursuit to learn malware reverse engineering an
 
 The project is composed by three parts, the server, the malware and the unlocker.
 
-The server store the victim's identification key along with the encryption key used by the malware.
+The server stores the victim's identification key along with the encryption key used by the malware.
 
-The malware encrypt with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payload before send then to the server. This approach with the optional Tor Proxy and a `.onion` domain allow you to hide almost completely your server.
+The malware encrypts with a RSA-4096 (RSA-OAEP-4096 + SHA256) public key any payload before sending them to the server. This approach with the optional Tor Proxy and a `.onion` domain allows you to hide almost completely.
 
 ## 👉 Features ☠️
 
 - Run in Background (or not)
-- Encrypt files using AES-256-CTR(Counter Mode) with random IV for each file.
+- Encrypts files using AES-256-CTR(Counter Mode) with random IV for each file.
 - Multithreading.
 - RSA-4096 to secure the client/server communication.
 - Includes an Unlocker. Coz I never meant to hurt you...🤭 {Eminem}
@@ -58,7 +58,7 @@ export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/go
 ```
 
-Build the project require a lot of steps, like the RSA key generation, build three binaries, embed manifest files, so, let's leave `make` do your job:
+Building the project requires a lot of steps, like the RSA key generation, build three binaries, embed manifest files, so, let `make` do your job:
 
 ```bash
 make deps
@@ -75,7 +75,7 @@ You can build the server for windows with `make -e GOOS=windows`.
 
 ### 👊 Config Parameters ☠️
 
-You can change some of the configs during compilation. Instead of run only `make`, you can use the following variables:
+You can change some of the configs during compilation. Instead of running `make` only, you can use the following variables:
 
 ```bash
 HIDDEN='-H windowsgui' # optional. If present the malware will run in background
@@ -95,7 +95,7 @@ Example:
 
 The `SERVER_` variables above only apply to the malware. The server has a flag `--port` that you can use to change the port that it will listen on.
 
-> DON'T RUN ransomware.exe IN YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you acidentally encrypt all of your disks!
+> DON'T RUN ransomware.exe ON YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you accidentally encrypt all your disks!
 
 ## 👉 Step by Step Demo and How it Works ☠️
 
@@ -129,7 +129,7 @@ Enter the server directory from another terminal and start it:
 cd bin/server && ./server --port 8080
 ```
 
-To make sure that all is working correctly, make a http request to `http://2af7161c.ngrok.io`:
+To make sure that it is working correctly, make a http request to `http://2af7161c.ngrok.io`:
 
 ```bash
 curl http://2af7161c.ngrok.io
@@ -137,13 +137,13 @@ curl http://2af7161c.ngrok.io
 
 If you see a `OK` and some logs in the server output you are ready to go.
 
-Now move the `ransomware.exe` and `unlocker.exe` to the VM along with some dummy files to test the malware. You can take a look at [cmd/common.go] to see some configuration options like file extensions to match, directories to scan, skipped folders, max size to match a file among others.
+Move the `ransomware.exe` and `unlocker.exe` to the VM along with some dummy files to test the malware. You can take a look at [cmd/common.go] to see some configuration options like file extensions to match, directories to scan, skipped folders, max size to match a file among others.
 
-Then simply run the `ransomware.exe` and see the magic happens :smile:.
+Then simply run the `ransomware.exe` and watch the magic happen :smile:.
 
 The window that you see can be hidden using the `HIDDEN` option described in the compilation section.
 
-After download, extract and start the Tor proxy, the malware waits until the tor bootstrapping is done and then proceed with the key exchange with the server. The client/server handshake takes place and the client payload, encrypted with an RSA-4096 public key must be correctly decrypted on the server. The victim identification and encryption keys are stored in a Golang embedded database called BoltDB (it also persists on disk). When completed we get into the find, match and encrypt phase, up to N-cores workers start to encrypt files matched by the patterns defined. This proccess is really quick and in seconds all of your files will be gone.
+After download, extract and start the Tor proxy, the malware waits until the tor bootstrapping is done and then proceed with the key exchange with the server. The client/server handshake happens and the client payload, encrypted with an RSA-4096 public key must be correctly decrypted on the server. The victim identification and encryption keys are stored in a Golang embedded database called BoltDB (it also persists on disk). When completed we get into the find, match and encrypt phase, up to N-cores workers start to encrypt files matched by the patterns defined. This proccess is really quick and in seconds all of your files will be gone.
 
 The encryption key exchanged with the server was used to encrypt all of your files. Each file has a random primitive called [IV](https://en.wikipedia.org/wiki/Initialization_vector), generated individually and saved as the first 16 bytes of the encrypted content. The algorithm used is AES-256-CTR, a good AES cypher with streaming mode of operation such that the file size is left intact.
 
@@ -151,7 +151,7 @@ The only two sources of information available about what just happen are the `RE
 
 In theory, to decrypt your files you need to send an amount of BTC to the attacker's wallet, followed by a contact sending your ID(located on the file created on desktop). If the attacker can confirm your payment it will possibly(or maybe not) return your encryption key and the `unlocker.exe` and you can use then to recover your files. This exchange can be accomplished in several ways and WILL NOT be implemented in this project for obvious reasons.
 
-Let's suppose you get your encryption key back. To recover the correct key point to the following url:
+Suppose you get your encryption key back. To recover the correct key point to the following url:
 
 ```bash
 curl -k http://2af7161c.ngrok.io/api/keys/:id
