@@ -1,5 +1,8 @@
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=for-the-badge&logo=tor-project&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 # <h1 align="center"> Kenyatta Ransomware 🤐 </h1>
+ONE CRITICAL ERROR: 
+    curl/libcurl4:Exposure of Resource to Wrong Sphere
+
 > PS: This project is purely academic, use at your own risk. I will not condone, in any way, the use of this software illegally or to attack targets without their authorization. Please do that on a throw-away machine, docker containers and VMs. 
 
 > Note: Unfortunately now some AVs (Malwarebytes, Windows Defender) detect the unlocker as a virus🥶. Disable any antivirus to play with the project or the decryption key maybe quarantined or deleted by the AV 🤭 Thus almost impossible to recover your data 🥲
