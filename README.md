@@ -179,3 +179,5 @@ The server has only two endpoints:
 ## 👉 The end ☠️
 
 Building a LIVE ransomware, with some of the best existing algorithms is not dificult, anyone with some programming skills can build that in any programming language.
+
+ [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
