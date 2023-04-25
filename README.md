@@ -13,9 +13,6 @@
 
 > Note: Unfortunately now some AVs (Malwarebytes, Windows Defender) detect the unlocker as a virus🥶. Disable any antivirus to play with the project or the decryption key maybe quarantined or deleted by the AV 🤭 Thus almost impossible to recover your data 🥲
 
-**Remember, security is always a double-edged sword**
-
-
 ## 👉 What is Ransomware😈
 
 ![This is an image](w-ransom1.jpg)
