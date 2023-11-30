@@ -103,7 +103,7 @@ Example:
 
 The `SERVER_` variables above only apply to the malware. The server has a flag `--port` that you can use to change the port that it will listen on.
 
-> DON'T RUN ransomware.exe ON YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not resposible if you accidentally encrypt all your disks!
+> DON'T RUN ransomware.exe ON YOUR PERSONAL MACHINE, EXECUTE ONLY IN A TEST ENVIRONMENT! I'm not responsible if you accidentally encrypt all your disks!
 
 ## 👉 Step by Step Demo and How it Works ☠️
 
